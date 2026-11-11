@@ -1006,8 +1006,25 @@ p {
   .filter-grid {
     grid-template-columns: 1fr;
   }
+  .navbar-container {
+    height: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
   .nav-links {
-    display: none; /* simple mobile adaptation */
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    width: 100%;
+    order: 3;
+    padding-bottom: 0.25rem;
+  }
+  .nav-link {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
   }
 }
 

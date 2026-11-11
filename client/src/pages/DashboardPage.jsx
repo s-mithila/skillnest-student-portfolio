@@ -412,7 +412,7 @@ export function DashboardPage() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                   <h2 style={{ fontSize: '1.35rem' }}>Your Collaboration Opportunities</h2>
                   <button onClick={openNewOppModal} className="btn btn-secondary btn-sm">
-                    <Plus size={15} /> Post Request
+                    <Plus size={15} /> Post Opportunity
                   </button>
                 </div>
 
