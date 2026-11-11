@@ -21,6 +21,8 @@ During university degree programs (especially Computer Science and Engineering),
 - Publish and discover open collaboration opportunities (e.g., seeking a frontend developer for a capstone).
 - Connect directly with peers across engineering departments.
 
+> 📖 **Comprehensive Academic Documentation:** For deep-dive architectural breakdowns, sequence diagrams, database dictionary, and university viva preparation, see [DOCUMENTATION.md](./DOCUMENTATION.md).
+
 ---
 
 ## 🚀 2. Quick Start & Installation
