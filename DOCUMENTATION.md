@@ -465,3 +465,4 @@ This section is prepared specifically to help students answer theoretical, archi
 
 ## 9. Conclusion
 SkillNest demonstrates a complete, production-grade full-stack architecture that remains simple to run and defend. With modern frontend practices, robust session security, parameterized SQL queries, and zero-setup deployment, it fulfills all requirements for a distinguished 7th-Semester Computer Science university project.
+
