@@ -89,3 +89,4 @@ export function OpportunityCard({ opportunity, showOwner = true, onEdit, onDelet
     </div>
   );
 }
+

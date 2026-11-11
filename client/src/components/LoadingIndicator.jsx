@@ -9,3 +9,4 @@ export function LoadingIndicator({ message = 'Loading content...' }) {
     </div>
   );
 }
+

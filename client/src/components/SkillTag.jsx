@@ -29,3 +29,4 @@ export function SkillTag({ skill, onRemove, onClick, isClickable = false }) {
     </span>
   );
 }
+

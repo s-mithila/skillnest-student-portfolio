@@ -17,3 +17,4 @@ export function ErrorMessage({ message = 'An error occurred.', onRetry }) {
     </div>
   );
 }
+

@@ -2,17 +2,15 @@
 // Collaboration Opportunities & Capstone Team Finder Board
 
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
-import { Sparkles, Search, Plus, Filter, Users } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
+import { Search, Filter, Users } from 'lucide-react';
 import { api } from '../services/api';
-import { useAuth } from '../context/AuthContext';
 import { OpportunityCard } from '../components/OpportunityCard';
 import { LoadingIndicator } from '../components/LoadingIndicator';
 import { EmptyState } from '../components/EmptyState';
 
 export function TeamFinderPage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { user } = useAuth();
 
   const [opportunities, setOpportunities] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -57,25 +55,11 @@ export function TeamFinderPage() {
 
   return (
     <div className="container" style={{ padding: '2.5rem 1rem 4rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
-        <div>
-          <h1 style={{ fontSize: '2.2rem', marginBottom: '0.4rem' }}>Team Finder Board</h1>
-          <p style={{ fontSize: '1.05rem' }}>
-            Looking for collaborators for your capstone, research paper, or hackathon? Connect with skilled peers.
-          </p>
-        </div>
-
-        {user ? (
-          <Link to="/dashboard" className="btn btn-primary">
-            <Plus size={16} />
-            <span>Post an Opportunity</span>
-          </Link>
-        ) : (
-          <Link to="/login" className="btn btn-primary">
-            <Plus size={16} />
-            <span>Sign In to Post</span>
-          </Link>
-        )}
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.2rem', marginBottom: '0.4rem' }}>Team Finder Board</h1>
+        <p style={{ fontSize: '1.05rem' }}>
+          Looking for collaborators for your capstone, research paper, or hackathon? Connect with skilled peers.
+        </p>
       </div>
 
       {/* Filter Bar */}
@@ -154,3 +138,4 @@ export function TeamFinderPage() {
     </div>
   );
 }
+

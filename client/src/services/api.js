@@ -37,3 +37,4 @@ export const api = {
   put: (url, body) => request(url, { method: 'PUT', body }),
   delete: (url) => request(url, { method: 'DELETE' }),
 };
+

@@ -117,3 +117,4 @@ export function ProjectCard({ project, showAuthor = true, onEdit, onDelete }) {
     </div>
   );
 }
+

@@ -65,3 +65,4 @@ export function StudentCard({ student, onSkillClick }) {
     </div>
   );
 }
+

@@ -3,16 +3,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
-import { Search, FolderGit2, Plus } from 'lucide-react';
+import { Search, FolderGit2 } from 'lucide-react';
 import { api } from '../services/api';
-import { useAuth } from '../context/AuthContext';
 import { ProjectCard } from '../components/ProjectCard';
 import { LoadingIndicator } from '../components/LoadingIndicator';
 import { EmptyState } from '../components/EmptyState';
 
 export function ProjectListPage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { user } = useAuth();
 
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -53,20 +51,11 @@ export function ProjectListPage() {
 
   return (
     <div className="container" style={{ padding: '2.5rem 1rem 4rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
-        <div>
-          <h1 style={{ fontSize: '2.2rem', marginBottom: '0.4rem' }}>Student Project Showcase</h1>
-          <p style={{ fontSize: '1.05rem' }}>
-            Explore academic systems, open source tools, and semester capstones built by university students.
-          </p>
-        </div>
-
-        {user && (
-          <Link to="/dashboard" className="btn btn-primary">
-            <Plus size={16} />
-            <span>Publish Your Project</span>
-          </Link>
-        )}
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.2rem', marginBottom: '0.4rem' }}>Student Project Showcase</h1>
+        <p style={{ fontSize: '1.05rem' }}>
+          Explore academic systems, open source tools, and semester capstones built by university students.
+        </p>
       </div>
 
       {/* Filter Bar */}
@@ -133,3 +122,4 @@ export function ProjectListPage() {
     </div>
   );
 }
+

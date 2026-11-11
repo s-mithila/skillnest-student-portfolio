@@ -59,3 +59,4 @@ CREATE INDEX IF NOT EXISTS idx_skills_user ON skills(user_id);
 CREATE INDEX IF NOT EXISTS idx_skills_name ON skills(skill_name);
 CREATE INDEX IF NOT EXISTS idx_projects_user ON projects(user_id);
 CREATE INDEX IF NOT EXISTS idx_opportunities_user ON opportunities(user_id);
+
